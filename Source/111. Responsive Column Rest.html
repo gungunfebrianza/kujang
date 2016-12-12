@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Responsive Rest</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<div class="ggf-container">
+  <h2>Using ggf-rest</h2>
+  <p>The ggf-rest class will use what's left of the grid column.</p>
+</div>
+
+<div class="ggf-row">
+  <div class="ggf-col ggf-container ggf-bg-blue" style="width:150px"><p>150px</p></div>
+  <div class="ggf-rest ggf-container ggf-bg-green"><p>ggf-rest</p></div>
+</div>
+<br>
+
+<div class="ggf-row">
+  <div class="ggf-col ggf-right ggf-container ggf-bg-blue" style="width:75px"><p>75px</p></div>
+  <div class="ggf-rest ggf-container ggf-bg-green"><p>ggf-rest</p></div>
+</div>
+<br>
+
+<div class="ggf-row">
+  <div class="ggf-col ggf-left ggf-container ggf-bg-blue" style="width:100px"><p>100px</p></div>
+  <div class="ggf-col ggf-right ggf-container ggf-bg-blue" style="width:100px"><p>100px</p></div>
+  <div class="ggf-rest ggf-container ggf-bg-green"><p>ggf-rest</p></div>
+</div>
+<br>
+
+<div class="ggf-row">
+  <div class="ggf-quarter ggf-container ggf-bg-red"><p>quarter</p></div>
+  <div class="ggf-half">
+    <div class="ggf-row">
+      <div class="ggf-col ggf-container ggf-bg-blue" style="width:80px"><p>80px</p></div>
+      <div class="ggf-rest ggf-container ggf-bg-green"><p>ggf-rest</p></div>
+    </div>
+  </div>
+  <div class="ggf-quarter ggf-container ggf-bg-purple"><p>quarter</p></div>
+</div>
+<br>
+
+<div class="ggf-row">
+  <div class="ggf-quarter ggf-container ggf-bg-red"><p>quarter</p></div>
+  <div class="ggf-quarter ggf-container ggf-bg-purple"><p>quarter</p></div>
+  <div class="ggf-half">
+    <div class="ggf-row">
+      <div class="ggf-col ggf-container ggf-bg-blue" style="width:35%"><p>35%</p></div>
+      <div class="ggf-rest ggf-container ggf-bg-green"><p>ggf-rest</p></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
