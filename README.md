@@ -1,28 +1,41 @@
 # Kujang Framework
 Pure CSS Framework Ready to War.
 
-- �Color
-- �Hover
-- �Container
-- �Border
-- �Panel
-- �Button
-- �Card
-- �Heading
-- �Font
-- �Align
-- �Padding
-- �Margin
-- �Display
-- �Position
-- �Quotes
-- �Alerts
+1. Color
+2. Hover
+3. Container
+4. Border
+5. Panel
+6. Button
+7. Card
+8. Heading
+9. Font
+10. Align
+11. Padding
+12. Margin
+13. Display
+14. Position
+15. Quotes
+16. Alerts
+17. Tables
+18. List
+19. Icons
+20. Responsive
 
 
-��Features
-- �Gradient �Colors
-- �Shake �Effects
+Features
+- Gradient Colors
+- Shake Effects
 
+
+
+
+
+
+
+
+
+-------------------------------------------
 MIT License
 
 Copyright (c) 2016 Gun Gun Febrianza
