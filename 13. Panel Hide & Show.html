@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>Panel Hide & Show</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+  <h2>Panels for Quotes</h2>
+  <p>The ggf-panel class can be used to display quotes.</p>
+
+  <div class="ggf-panel ggf-leftbar ggf-gradient-transpile ggf-xxlarge ggf-serif">
+    <p><i>"Simplicity is the ultimate sophistication"</i> - Leonardo Da Vinci</p>
+  </div>
+
+<button class="ggf-btn" onclick="document.getElementById('id01').style.display='block'">Show Panel</button> 
+
+<div id="id01" class="ggf-panel ggf-gradient-vice" style="display:none">
+  <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn">x</span>
+  <p class="ggf-text-white" >Click on the X to close this panel.</p>
+  <p>Click on the X to close this panel.</p>
+</div>
+
+
+
+
+</body>
+</html> 
+
+
+
+
+
+<link rel="stylesheet" href="GGF.css">
