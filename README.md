@@ -1,5 +1,7 @@
 # Kujang Framework
-Pure CSS Framework Ready to War.
+Pure CSS Framework Ready to War for Mobile-first Responsive Development & Modern Web Development. 
+
+<img src="kujang.jpg">
 
 1. Color
 2. Hover
