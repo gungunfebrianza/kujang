@@ -2,6 +2,7 @@
 Pure CSS Framework Ready to War for Mobile-first Responsive Development & Modern Web Development. 
 
 <img src="kujang.jpg">
+<p>Image Credit For : http://vargvilmer.deviantart.com/art/Kujang-392405340</p>
 
 1. Color
 2. Hover
