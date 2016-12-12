@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Accordions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<div class="ggf-container">
+  <h2>Accordions</h2>
+  <p>An accordion is used to show (and hide) content that is broken into sections:</p>
+  
+  <div class="ggf-accordion ggf-bg-light-gray">
+    <button onclick="myFunction('Demo1')" class="ggf-btn-block ggf-gradient-lemon ggf-left-align">Open Section 1</button>
+    <div id="Demo1" class="ggf-accordion-content ggf-container">
+      <h4>Section 1</h4>
+      <p>Some text..</p>
+    </div>
+    <button onclick="myFunction('Demo2')" class="ggf-btn-block ggf-gradient-lemon ggf-left-align">Open Section 2</button>
+    <div id="Demo2" class="ggf-accordion-content ggf-container">
+      <h4>Section 2</h4>
+      <p>Some other text..</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("ggf-show") == -1) {
+        x.className += " ggf-show";
+    } else { 
+        x.className = x.className.replace(" ggf-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
