@@ -24,6 +24,11 @@ Pure CSS Framework Ready to War for Mobile-first Responsive Development & Modern
 18. List
 19. Icons
 20. Responsive
+21. Image
+22. Image Effect
+23. Form Input
+24. Badges
+25. Tags
 
 
 Features
