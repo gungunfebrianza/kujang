@@ -1933,7 +1933,12 @@ input[type=radio].ggf-radio:disabled+.ggf-validate {
 .ggf-gradient-portrait {
 	background: linear-gradient(to left, #8e9eab , #eef2f3)!important
 }
-
+.ggf-gradient-harmonic {
+	background: linear-gradient(to left, #16A085 , #F4D03F)!important
+}
+.ggf-gradient-lemon {
+	background: linear-gradient(to left, #3CA55C , #B5AC49)!important
+}
 .ggf-gradient-beach {
 	color: #fff!important;
 	background: linear-gradient(to left, #02AAB0 , #00CDAC)!important
@@ -1941,6 +1946,38 @@ input[type=radio].ggf-radio:disabled+.ggf-validate {
 .ggf-gradient-paradise {
 	background: linear-gradient(to left, #1D2B64 , #F8CDDA)!important
 }
+.ggf-gradient-mango {
+	background: linear-gradient(to left, #F09819 , #EDDE5D)!important
+}
+.ggf-gradient-sunrise {
+	background: linear-gradient(to left, #FF512F , #F09819)!important
+}
+.ggf-gradient-bloody {
+	background: linear-gradient(to left, #FF512F , #DD2476)!important
+}
+.ggf-gradient-soundcloud {
+	background: linear-gradient(to left, #fe8c00 , #f83600)!important
+}
+.ggf-gradient-parklife {
+	background: linear-gradient(to left, #ADD100 , #7B920A)!important
+}	
+.ggf-gradient-facebook {
+	background: linear-gradient(to left, #00c6ff , #0072ff)!important
+}
+.ggf-gradient-instagram {
+	background: linear-gradient(to left, #517fa4 , #243949)!important
+}
+.ggf-gradient-pinky {
+	background: linear-gradient(to left, #DD5E89 , #F7BB97)!important
+}
+.ggf-gradient-chery {
+	background: linear-gradient(to left, #FBD3E9 , #BB377D)!important
+}
+
+
+
+
+
 
 
 .ggf-bg-white,
