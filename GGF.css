@@ -1551,20 +1551,48 @@ input[type=radio].ggf-radio:disabled+.ggf-validate {
 }
 
 
+/*Gradients*/
+
 .ggf-gradient-vice {
-background: linear-gradient(to left, #3494E6 , #EC6EAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to left, #3494E6 , #EC6EAD)!important
 }
 
 .ggf-gradient-nepal {
-background: linear-gradient(to left, #de6161 , #2657eb);
+	color: #fff!important;
+	background: linear-gradient(to left, #de6161 , #2657eb)!important
 }
 
 .ggf-gradient-transpile {
-background: linear-gradient(to left, #16BFFD , #CB3066); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}       
+	color: #fff!important;
+	background: linear-gradient(to left, #16BFFD , #CB3066)!important
+}     
+  
+.ggf-gradient-nimvelo,
+.ggf-hover-nimvelo:hover {
+	color: #fff!important;
+	background: linear-gradient(to left, #314755 , #26a0da)!important
+}
+.ggf-gradient-dusk {
+	background: linear-gradient(to left, #ff6e7f , #bfe9ff)!important
+}
+.ggf-gradient-youtube {
+	color: #fff!important;
+	background: linear-gradient(to left, #e52d27 , #b31217)!important
+}
+
+.ggf-gradient-portrait {
+	background: linear-gradient(to left, #8e9eab , #eef2f3)!important
+}
+
+.ggf-gradient-beach {
+	color: #fff!important;
+	background: linear-gradient(to left, #02AAB0 , #00CDAC)!important
+}
+.ggf-gradient-paradise {
+	background: linear-gradient(to left, #1D2B64 , #F8CDDA)!important
+}
 
 
-//Background Color Class 
 .ggf-bg-white,
 .ggf-hover-white:hover {
     color: #000!important;
@@ -1640,7 +1668,7 @@ background: linear-gradient(to left, #16BFFD , #CB3066); /* W3C, IE 10+/ Edge, F
     color: #000!important;
     background-color: #FF9900!important
 }
-.ggf-deep-orange,
+.ggf-bg-deep-orange,
 .ggf-hover-deep-orange:hover {
     color: #fff!important;
     background-color: #ff5722!important
@@ -1650,7 +1678,7 @@ background: linear-gradient(to left, #16BFFD , #CB3066); /* W3C, IE 10+/ Edge, F
     color: #fff!important;
     background-color: #9B24B0!important
 }
-.ggf-deep-purple,
+.ggf-bg-deep-purple,
 .ggf-hover-deep-purple:hover {
     color: #fff!important;
     background-color: #673ab7!important
