@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Alerts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<div class="ggf-container">
+  <h2>Closing Alerts</h2>
+  <p>To close the alerts, click on the X in the upper right corner:</p>
+
+  <div class="ggf-panel ggf-bg-red">
+    <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn">&times;</span>
+    <h3>Danger!</h3>
+    <p>Red often indicates a dangerous or negative situation.</p>
+  </div>
+
+  <div class="ggf-panel ggf-bg-yellow">
+    <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn ggf-hover-text-red">&times;</span>
+    <h3>Warning!</h3>
+    <p>Yellow often indicates a warning that might need attention.</p>
+  </div>
+
+  <div class="ggf-panel ggf-bg-green">
+    <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn">&times;</span>
+    <h3>Success!</h3>
+    <p>Green often indicates something successful or positive.</p>
+  </div>
+
+  <div class="ggf-panel ggf-bg-blue">
+    <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn">&times;</span>
+    <h3>Info!</h3>
+    <p>Blue often indicates a neutral informative change or action.</p>
+  </div>
+</div>
+
+</body>
+</html>
