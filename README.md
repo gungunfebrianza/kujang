@@ -42,6 +42,7 @@ Features
 - Shake Effects
 
 To Do
+- Add Parallax
 - Add Slideshow
 - Add Tab
 - Add Modals
