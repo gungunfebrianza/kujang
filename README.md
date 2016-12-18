@@ -43,6 +43,7 @@ Features
 
 To Do
 - Add Slideshow
+- Add Tab
 - Add Modals
 - Add Tooltips
 - Add Progressbar
