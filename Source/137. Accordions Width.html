@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>Accordion Width</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<div class="ggf-container">
+  <h2>Accordion Width</h2>
+  <p>Use the CSS width property to change the width of the accordion:</p>
+
+  <div class="ggf-accordion ggf-bg-light-gray ggf-section" style="width:25%">
+    <button onclick="myFunction('Demo1')" class="ggf-btn-block">
+    25%</button>
+    <div id="Demo1" class="ggf-accordion-content ggf-container">
+      <p>Lorem ipsum 25% width</p>
+    </div>
+  </div>
+
+  <div class="ggf-accordion ggf-bg-light-gray ggf-section" style="width:50%">
+    <button onclick="myFunction('Demo2')" class="ggf-btn-block">
+    50%</button>
+    <div id="Demo2" class="ggf-accordion-content ggf-container">
+      <p>Lorem ipsum 50% width</p>
+    </div>
+  </div>
+
+  <div class="ggf-accordion ggf-bg-light-gray ggf-section" style="width:75%">
+    <button onclick="myFunction('Demo3')" class="ggf-btn-block">
+    75%</button>
+    <div id="Demo3" class="ggf-accordion-content ggf-container">
+      <p>Lorem ipsum 75% width</p>
+    </div>
+  </div>
+
+  <div class="ggf-accordion ggf-bg-light-gray ggf-section">
+    <button onclick="myFunction('Demo4')" class="ggf-btn-block">
+    Default (100%)</button>
+    <div id="Demo4" class="ggf-accordion-content ggf-container">
+      <p>Lorem ipsum 100% width</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("ggf-show") == -1) {
+        x.className += " ggf-show";
+    } else { 
+        x.className = x.className.replace(" ggf-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

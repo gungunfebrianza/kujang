@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Accordions Active</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<div class="ggf-container">
+  <h2>Active Accordions</h2>
+  <p>In this example we add the ggf-red class to an active accordion (when the button is clicked on and the content is opened).</p>
+
+  <div class="ggf-accordion ggf-bg-light-gray">
+    <button onclick="myFunction('Demo1')" class="ggf-btn-block ggf-left-align">Open Section 1</button>
+    <div id="Demo1" class="ggf-accordion-content ggf-container">
+        <p>Some text..</p>
+    </div>
+    <button onclick="myFunction('Demo2')" class="ggf-btn-block ggf-left-align">Open Section 2</button>
+    <div id="Demo2" class="ggf-accordion-content ggf-container">
+        <p>Some other text..</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("ggf-show") == -1) {
+        x.className += " ggf-show";
+        x.previousElementSibling.className += " ggf-bg-red";
+    } else { 
+        x.className = x.className.replace(" ggf-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" ggf-bg-red", "");
+    }
+}
+</script>
+
+</body>
+</html>

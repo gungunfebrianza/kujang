@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>Navigation Pane Slide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<nav class="ggf-sidenav ggf-bg-white ggf-card-2" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" 
+  onclick="ggf_close()"
+  class="ggf-closenav ggf-large">Close &times;</a>
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+  <a href="#">Link 5</a>
+</nav>
+
+<div id="main">
+
+<header class="ggf-container ggf-bg-teal">
+  <span class="ggf-opennav ggf-xlarge" onclick="ggf_open()" id="openNav">&#9776;</span>
+  <h1>My Header</h1>
+</header>
+
+<img src="honey.jpg" style="width:100%">
+
+<div class="ggf-container">
+  <p>In this example, the sidenav is hidden (style="display:none") and is only shown when you click on the menu icon in the top left corner. When it is opened, it shifts the page content to the right (we use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the value used to set the width of the sidenav. Tip: If you change the left margin to 40%, you should change the width of the sidenav to 40% as well.</p>
+</div>
+
+<footer class="ggf-container ggf-bg-teal">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>
+
+</div>
+
+<script>
+function ggf_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidenav").style.width = "25%";
+  document.getElementById("mySidenav").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function ggf_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidenav").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>

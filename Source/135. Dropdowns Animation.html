@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>Dropdown Animation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<div class="ggf-container">
+  <h2>Animated Dropdown</h2>
+  <p>Use any of the ggf-animate-classes to fade, zoom or slide in the dropdown content (ggf-animate-zoom|opacity|top|bottom|left|right).</p>
+
+  <div class="ggf-dropdown-click">
+    <button onclick="myFunction()" class="ggf-btn">Click me</button>
+    <div id="Demo" class="ggf-dropdown-content ggf-card-4 ggf-animate-zoom">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("ggf-show") == -1) {
+        x.className += " ggf-show";
+    } else { 
+        x.className = x.className.replace(" ggf-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

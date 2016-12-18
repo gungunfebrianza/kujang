@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<title>Navigation Side Collapse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<nav class="ggf-sidenav ggf-collapse ggf-bg-white ggf-card-2 ggf-animate-left" style="width:200px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="ggf_close()" 
+  class="ggf-closenav ggf-large ggf-hide-large">Close &times;</a>
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+  <a href="#">Link 5</a>
+</nav>
+
+<div class="ggf-main" style="margin-left:200px">
+<header class="ggf-container ggf-bg-teal">
+  <span class="ggf-opennav ggf-xlarge ggf-hide-large" onclick="ggf_open()">&#9776;</span>
+  <h2>Responsive Sidenav</h2>
+</header>
+
+<div class="ggf-container">
+  <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 992px), and hidden on tablets and mobile phones (screens that are less than 992px wide).</p>
+  <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
+  <p><b>Resize the browser window to understand how it works.</b></p>
+</div>
+
+<footer class="ggf-container ggf-teal">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>
+     
+</div>
+
+<script>
+function ggf_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function ggf_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+     
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>Navigation Pane Full</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="GGF.css">
+<body>
+
+<nav class="ggf-sidenav ggf-bg-white" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" 
+  onclick="ggf_close()"
+  class="ggf-closenav ggf-large">Close &times;</a>
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+  <a href="#">Link 5</a>
+</nav>
+
+<header class="ggf-container ggf-bg-teal">
+    <span class="ggf-opennav ggf-xlarge" onclick="ggf_open()">&#9776;</span>    
+  <h1>My Header</h1>
+</header>
+
+<img src="soulmate.jpg" style="width:100%">
+
+<div class="ggf-container">
+  <p>In this example, the sidenav is hidden (style="display:none") and is only shown when you click on the menu icon in the top left corner. When it is opened, it hides the page content (it lays on top of it (100% width and height)).</p>
+</div>
+
+<footer class="ggf-container ggf-bg-teal">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>
+     
+<script>
+function ggf_open() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+function ggf_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+     
+</body>
+</html> 
+ 
