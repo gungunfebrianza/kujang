@@ -29,15 +29,25 @@ Pure CSS Framework Ready to War for Mobile-first Responsive Development & Modern
 23. Form Input
 24. Badges
 25. Tags
+26. Animation
+27. Effects
+28. Dropdown
+29. Accordion
+30. Navigation
+31. Sidenav
 
 
 Features
 - Gradient Colors
 - Shake Effects
 
-
-
-
+To Do
+- Add Slideshow
+- Add Modals
+- Add Tooltips
+- Add Progressbar
+- Add Pagination
+- Add Material Design
 
 
 
