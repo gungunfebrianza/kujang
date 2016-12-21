@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="asset/css/normalize.css">
+	<link rel="stylesheet" href="asset/css/GGF.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	</style>
+</head>
+
+<body class="ggf-bg-light-gray">
+
+<!-- Top container -->
+<div class="ggf-container ggf-top ggf-gradient-beach ggf-large ggf-padding" style="z-index:4">
+	<button class="ggf-btn ggf-hide-large ggf-padding-0 ggf-hover-text-gray" onclick="ggf_open();"><i class="fa fa-bars"></i>  Menu</button>
+	<span class="ggf-right">Logout</span>
+</div>
+
+<!-- Sidenav/menu -->
+<nav class="ggf-sidenav ggf-collapse ggf-bg-teal ggf-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="ggf-container ggf-row ggf-gradient-transpile">
+    <div class="ggf-col s4">
+      <img src="avatar2.png" class="ggf-circle ggf-margin-right" style="width:44px">
+    </div>
+    <div class="ggf-col s8">
+      <span>Hello, <strong>Admin</strong></span><br>
+      <a href="#" class="ggf-hover-none ggf-hover-text-red ggf-show-inline-block"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="ggf-hover-none ggf-hover-text-green ggf-show-inline-block"><i class="fa fa-user"></i></a>
+      <a href="#" class="ggf-hover-none ggf-hover-text-blue ggf-show-inline-block"><i class="fa fa-cog"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="ggf-container ggf-gradient-nepal">
+    <h5>Dashboard</h5>
+  </div>
+  <a href="#" class="ggf-padding-16 ggf-hide-large ggf-dark-gray ggf-hover-black" onclick="ggf_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+  <a href="#" class="ggf-padding ggf-gradient-emerald ggf-hover-green"><i class="fa fa-users fa-fw"></i>  Overview</a>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-eye fa-fw"></i>  Views</a>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-users fa-fw"></i>  Traffic</a>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
+  <hr>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-bell fa-fw"></i>  News</a>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-bank fa-fw"></i>  General</a>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-history fa-fw"></i>  History</a>
+  <a href="#" class="ggf-padding ggf-hover-emerald"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="ggf-overlay ggf-hide-large ggf-animate-opacity" onclick="ggf_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="ggf-main ggf-bg-white" style="margin-left:300px; margin-top:43px;">
+	<!-- Header -->
+	<header class="ggf-container ggf-animate-top">
+		<div class="ggf-panel ggf-card-4 ggf-gradient-river">
+			<h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+		</div>
+	</header>
+
+	<div class="ggf-container ggf-row-padding ggf-margin-bottom">
+		<div class="ggf-panel ggf-card-4 ggf-padding-16">
+			<div class="ggf-quarter">
+			  <div class="ggf-container ggf-gradient-bloody ggf-padding-16">
+				<div class="ggf-left"><i class="fa fa-comment ggf-xxxlarge"></i></div>
+				<div class="ggf-right">
+				  <h3>13</h3>
+				</div>
+				<div class="ggf-clear"></div>
+				<h4>Messages</h4>
+			  </div>
+			</div>
+			<div class="ggf-quarter">
+			  <div class="ggf-container ggf-gradient-instagram ggf-padding-16">
+				<div class="ggf-left"><i class="fa fa-eye ggf-xxxlarge"></i></div>
+				<div class="ggf-right">
+				  <h3>23</h3>
+				</div>
+				<div class="ggf-clear"></div>
+				<h4>Views</h4>
+			  </div>
+			</div>
+			<div class="ggf-quarter">
+			  <div class="ggf-container ggf-gradient-beach ggf-padding-16">
+				<div class="ggf-left"><i class="fa fa-share-alt ggf-xxxlarge"></i></div>
+				<div class="ggf-right">
+				  <h3>11</h3>
+				</div>
+				<div class="ggf-clear"></div>
+				<h4>Shares</h4>
+			  </div>
+			</div>
+			<div class="ggf-quarter">
+			  <div class="ggf-container ggf-gradient-soundcloud ggf-text-white ggf-padding-16">
+				<div class="ggf-left"><i class="fa fa-users ggf-xxxlarge"></i></div>
+				<div class="ggf-right">
+				  <h3>5</h3>
+				</div>
+				<div class="ggf-clear"></div>
+				<h4>Users</h4>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ggf-container ggf-section">
+		<div class="ggf-panel ggf-card-4">
+			<div class="ggf-row-padding" style="margin:0 -16px">
+				<div class="ggf-third ggf-center ggf-padding-16">
+					<div class="ggf-tag ggf-round ggf-gradient-bloody ggf-border ggf-border-white">
+						Chart
+					</div>
+				<canvas id="canvas" style="height:700px"></canvas>
+					<button class="ggf-btn ggf-bg-pale-green ggf-margin-top" id="randomizeData">Randomize Data</button>
+					<button class="ggf-btn ggf-bg-pale-blue ggf-margin-top" id="addDataset">Add Dataset</button>
+					<button class="ggf-btn ggf-bg-pale-red ggf-margin-top" id="removeDataset">Remove Dataset</button>
+					<button class="ggf-btn ggf-bg-light-green ggf-margin-top" id="addData">Add Data</button>
+					<button class="ggf-btn ggf-bg-red ggf-margin-top" id="removeData">Remove Data</button>
+				</div>
+			
+				<div class="ggf-twothird ggf-center ggf-padding-16">
+					<div class="ggf-tag ggf-round ggf-gradient-soundcloud ggf-border ggf-border-white">
+						Feeds
+					</div>
+					<table class="ggf-table ggf-striped ggf-bg-white">
+					  <tr>
+						<td><i class="fa fa-user ggf-bg-blue ggf-padding-tiny"></i></td>
+						<td>Just Play with your moment.js ...</td>
+						<td><i>10 mins</i></td>
+					  </tr>
+					  <tr>
+						<td><i class="fa fa-bell ggf-bg-red ggf-padding-tiny"></i></td>
+						<td>Just Play with your moment.js ...</td>
+						<td><i>15 mins</i></td>
+					  </tr>
+					  <tr>
+						<td><i class="fa fa-users ggf-bg-orange ggf-text-white ggf-padding-tiny"></i></td>
+						<td>Just Play with your moment.js ...</td>
+						<td><i>17 mins</i></td>
+					  </tr>
+					  <tr>
+						<td><i class="fa fa-comment ggf-bg-red ggf-padding-tiny"></i></td>
+						<td>Just Play with your moment.js ...</td>
+						<td><i>25 mins</i></td>
+					  </tr>
+					  <tr>
+						<td><i class="fa fa-bookmark ggf-bg-light-green ggf-padding-tiny"></i></td>
+						<td>Just Play with your moment.js ...</td>
+						<td><i>28 mins</i></td>
+					  </tr>
+					  <tr>
+						<td><i class="fa fa-laptop ggf-bg-red ggf-padding-tiny"></i></td>
+						<td>Just Play with your moment.js ...</td>
+						<td><i>35 mins</i></td>
+					  </tr>
+					  <tr>
+						<td><i class="fa fa-share-alt ggf-bg-green ggf-padding-tiny"></i></td>
+						<td>Just Play with your moment.js ...</td>
+						<td><i>39 mins</i></td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+  <hr>
+  <div class="ggf-container">
+    <h5>Status</h5>
+    <p>Status 1</p>
+    <div class="ggf-progress-container ggf-bg-gray">
+      <div id="myBar" class="ggf-progressbar ggf-bg-green" style="width:25%">
+        <div class="ggf-center ggf-text-white">+25%</div>
+      </div>
+    </div>
+
+    <p>Status 2</p>
+    <div class="ggf-progress-container ggf-bg-gray">
+      <div id="myBar" class="ggf-progressbar ggf-bg-orange" style="width:50%">
+        <div class="ggf-center ggf-text-white">50%</div>
+      </div>
+    </div>
+
+    <p>Status 3</p>
+    <div class="ggf-progress-container ggf-bg-gray">
+      <div id="myBar" class="ggf-progressbar ggf-bg-red" style="width:75%">
+        <div class="ggf-center ggf-text-white">75%</div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<br>
+  <hr>
+  <div class="ggf-container">
+    <h5>List User</h5>
+    <ul class="ggf-ul ggf-card-4 ggf-bg-white">
+      <li class="ggf-padding-16">
+        <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn ggf-padding ggf-margin-right ggf-medium">x</span>
+        <img src="avatar2.png" class="ggf-left ggf-circle ggf-margin-right" style="width:35px">
+        <span class="ggf-xlarge">Gun Gun Febrianza</span><br>
+      </li>
+      <li class="ggf-padding-16">
+        <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn ggf-padding ggf-margin-right ggf-medium">x</span>
+        <img src="avatar2.png" class="ggf-left ggf-circle ggf-margin-right" style="width:35px">
+        <span class="ggf-xlarge">Christa Agung Winarno</span><br>
+      </li>
+      <li class="ggf-padding-16">
+        <span onclick="this.parentElement.style.display='none'" class="ggf-closebtn ggf-padding ggf-margin-right ggf-medium">x</span>
+        <img src="avatar2.png" class="ggf-left ggf-circle ggf-margin-right" style="width:35px">
+        <span class="ggf-xlarge">Martino Hart</span><br>
+      </li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="ggf-container">
+    <h5>Recent Comments</h5>
+    <div class="ggf-row">
+      <div class="ggf-col m2 text-center">
+        <img class="ggf-circle" src="avatar2.png" style="width:96px;height:96px">
+      </div>
+      <div class="ggf-col m10 ggf-container">
+        <h4>Sherly <span class="ggf-opacity ggf-medium">Sep 29, 2016, 9:12 PM</span></h4>
+        <p>Tetap semangat ya !</p><br>
+      </div>
+    </div>
+
+    <div class="ggf-row">
+      <div class="ggf-col m2 text-center">
+        <img class="ggf-circle" src="avatar2.png" style="width:96px;height:96px">
+      </div>
+      <div class="ggf-col m10 ggf-container">
+        <h4>Irfan Rangga <span class="ggf-opacity ggf-medium">Sep 28, 2016, 10:15 PM</span></h4>
+        <p>Test, 1 2 3 ....</p><br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="ggf-container ggf-dark-grey ggf-padding-32">
+    <div class="ggf-row">
+      <div class="ggf-container ggf-third">
+        <h5 class="ggf-bottombar ggf-border-green">Demographic</h5>
+        <p>Language</p>
+        <p>Country</p>
+        <p>City</p>
+      </div>
+      <div class="ggf-container ggf-third">
+        <h5 class="ggf-bottombar ggf-border-red">System</h5>
+        <p>Browser</p>
+        <p>OS</p>
+        <p>More</p>
+      </div>
+      <div class="ggf-container ggf-third">
+        <h5 class="ggf-bottombar ggf-border-orange">Target</h5>
+        <p>Users</p>
+        <p>Active</p>
+        <p>Geo</p>
+        <p>Interests</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="ggf-container ggf-padding-16 ggf-bg-light-gray">
+    <h4>FOOTER</h4>
+    <p>Developed By<a href="#" target="_blank"> Techno Camp Indonesia</a></p>
+  </footer>
+        
+
+
+  <!-- End page content -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+<script src="utils.js"></script>
+
+<script>
+        var DEFAULT_DATASET_SIZE = 7;
+
+        var addedCount = 0;
+        var color = Chart.helpers.color;
+        var bubbleChartData = {
+            animation: {
+                duration: 10000
+            },
+            datasets: [{
+                label: "My First dataset",
+                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+                borderColor: window.chartColors.red,
+                borderWidth: 1,
+                data: [{
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }]
+            }, {
+                label: "My Second dataset",
+                backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+                borderColor: window.chartColors.orange,
+                borderWidth: 1,
+                data: [{
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }, {
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                }]
+            }]
+        };
+
+        window.onload = function() {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            window.myChart = new Chart(ctx, {
+                type: 'bubble',
+                data: bubbleChartData,
+                options: {
+                    responsive: true,
+                    title:{
+                        display:true,
+                        text:'Chart.js Bubble Chart'
+                    },
+                    tooltips: {
+                        mode: 'point'
+                    }
+                }
+            });
+        };
+
+        document.getElementById('randomizeData').addEventListener('click', function() {
+            bubbleChartData.datasets.forEach(function(dataset) {
+                dataset.data = dataset.data.map(function() {
+                    return {
+                        x: randomScalingFactor(),
+                        y: randomScalingFactor(),
+                        r: Math.abs(randomScalingFactor()) / 5,
+                    };
+                });
+            });
+            window.myChart.update();
+        });
+
+        var colorNames = Object.keys(window.chartColors);
+        document.getElementById('addDataset').addEventListener('click', function() {
+            ++addedCount;
+            var colorName = colorNames[bubbleChartData.datasets.length % colorNames.length];;
+            var dsColor = window.chartColors[colorName];
+            var newDataset = {
+                label: "My added dataset " + addedCount,
+                backgroundColor: color(dsColor).alpha(0.5).rgbString(),
+                borderColor: dsColor,
+                borderWidth: 1,
+                data: []
+            };
+
+            for (var index = 0; index < DEFAULT_DATASET_SIZE; ++index) {
+                newDataset.data.push({
+                    x: randomScalingFactor(),
+                    y: randomScalingFactor(),
+                    r: Math.abs(randomScalingFactor()) / 5,
+                });
+            }
+
+            bubbleChartData.datasets.push(newDataset);
+            window.myChart.update();
+        });
+
+        document.getElementById('addData').addEventListener('click', function() {
+            if (bubbleChartData.datasets.length > 0) {
+                for (var index = 0; index < bubbleChartData.datasets.length; ++index) {
+                    bubbleChartData.datasets[index].data.push({
+                        x: randomScalingFactor(),
+                        y: randomScalingFactor(),
+                        r: Math.abs(randomScalingFactor()) / 5,
+                    });
+                }
+
+                window.myChart.update();
+            }
+        });
+
+        document.getElementById('removeDataset').addEventListener('click', function() {
+            bubbleChartData.datasets.splice(0, 1);
+            window.myChart.update();
+        });
+
+        document.getElementById('removeData').addEventListener('click', function() {
+            bubbleChartData.datasets.forEach(function(dataset, datasetIndex) {
+                dataset.data.pop();
+            });
+
+            window.myChart.update();
+        });
+
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function ggf_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function ggf_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html> 
